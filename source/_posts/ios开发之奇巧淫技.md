@@ -4,7 +4,7 @@ title: ios开发之奇巧淫技
 ---
 
 # ios开发之奇巧淫技
-
+>作者：赵文龙
 1.The file “GCZP” couldn’t be opened because you don’t have permission to
 	解决办法1：将info.plist的文件中的Executable.file中的文件修改为:$(PRODUCT_NAME)
 	解决办法2：删除info.plist文件，重新添加。该方法注意事项（1）不能删除引用。（2）添加时注			   意该文件的原始路径
