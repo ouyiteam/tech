@@ -10,8 +10,6 @@ install:
 
 before_install:
 - npm install -g hexo-cli
-- npm install hexo --save
-- hexo -v
 
 
 # config for `hexo deploy`
@@ -25,7 +23,7 @@ before_install:
 
 
 script:
-- hexo init
+- npm install hexo --no-optional
 - hexo generate
 - hexo deploy
 
