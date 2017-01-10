@@ -6,7 +6,7 @@ node_js:
 
 # S: Build Lifecycle
 install:
-  - npm install
+- npm install
 
 before_install:
 - npm install -g hexo-cli
@@ -23,7 +23,7 @@ before_install:
 
 
 script:
-- npm install hexo --no-optional
+- npm install 
 - hexo generate
 - hexo deploy
 
