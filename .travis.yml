@@ -6,10 +6,11 @@ node_js:
 
 # S: Build Lifecycle
 install:
-- npm install
+- npm install -g
 
 before_install:
 - npm install -g hexo-cli
+- npm install -g hexo --save
 
 
 
