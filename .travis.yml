@@ -1,0 +1,31 @@
+language: node_js
+
+
+node_js:
+- '0.12'
+
+# S: Build Lifecycle
+install:
+  - npm install
+
+before_install:
+- npm install hexo -g
+
+# config for `hexo deploy`
+- cp .daocloud/id_rsa ~/.ssh/
+- chmod 600 ~/.ssh/id_rsa
+- eval $(ssh-agent)
+- ssh-add ~/.ssh/id_rsa
+- cp .daocloud/ssh_config ~/.ssh/config
+- git config --global user.name "zdl411437734"
+- git config --global user.email "zdl_411437734@hotmail.com"
+
+
+script:
+- hexo generate
+- hexo deploy
+
+
+branches:
+  only:
+  - master
