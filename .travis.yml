@@ -12,6 +12,7 @@ install:
 before_install:
 - npm install hexo-cli
 - npm install hexo --save
+- npm install hexo-deployer-git --save 
 - mv _config.yml _config
 - hexo init
 - mv _config _config.yml
