@@ -8,10 +8,13 @@ node_js:
 install:
 - npm install 
 
+
 before_install:
 - npm install hexo-cli
 - npm install hexo --save
-
+- mv _config.yml _config
+- hexo init
+- mv _config _config.yml
 
 
 # config for `hexo deploy`
@@ -27,10 +30,6 @@ before_install:
 script:
 - pwd
 - ls
-- mv _config.yml _config
-- hexo init
-- npm install
-- mv _config _config.yml
 - hexo clean
 - hexo generate
 - hexo deploy
