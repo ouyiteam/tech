@@ -19,7 +19,7 @@ before_install:
 - cp .daocloud/ssh_config ~/.ssh/config
 - git config --global user.name "zdl411437734"
 - git config --global user.email "zdl_411437734@hotmail.com"
-
+- hexo -v
 
 script:
 - hexo generate
