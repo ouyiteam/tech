@@ -23,7 +23,6 @@ before_install:
 
 
 script:
-- npm install 
 - hexo generate
 - hexo deploy
 
