@@ -25,6 +25,7 @@ before_install:
 
 
 script:
+- hexo init
 - hexo generate
 - hexo deploy
 
