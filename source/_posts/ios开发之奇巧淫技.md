@@ -46,3 +46,4 @@ title: ios开发之奇巧淫技
 		解决办法1：这里需要重写父视图(superView)的- (UIView *)hitTest:				(CGPoint)point withEvent:(UIEvent *)event ，在该方法里判断点击的点是否在视	图(view)里，如果是则返回视图(view)，如果不是根据项目需求返回。
 	13.UITest获取不到UITextField等控件，在模拟器上运行录制的时候最容易退出。原因暂时没有找到，不过解决方法是有的。
 		解决方法1：将UITest的BunledID改成和工程一样的，然后用真机进行录制，这样就可以成功获取到该控件。
+  14. abc 

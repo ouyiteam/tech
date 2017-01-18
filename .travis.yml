@@ -7,8 +7,8 @@ node_js:
 # S: Build Lifecycle
 install:
 - npm install
-- npm install -g hexo-cli
-- npm install hexo --save
+# - npm install -g hexo-cli
+# - npm install hexo --save
 
 before_install:
 
