@@ -29,6 +29,8 @@ before_install:
 
 
 script:
+- npm install -g hexo-cli
+- npm install hexo --save
 - pwd
 - ls
 - hexo clean
