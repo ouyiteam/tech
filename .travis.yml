@@ -6,13 +6,13 @@ node_js:
 
 # S: Build Lifecycle
 install:
-- npm install 
-
-
-before_install:
+- npm install
 - npm install hexo-cli
 - npm install hexo --save
-# - npm install hexo-deployer-git --save 
+
+before_install:
+
+# - npm install hexo-deployer-git --save
 # - mv _config.yml _config
 # - hexo init
 # - mv _config _config.yml
