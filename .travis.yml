@@ -31,6 +31,7 @@ before_install:
 script:
 - npm install -g hexo-cli
 - npm install hexo --save
+- npm install hexo-generator-search --save
 - pwd
 - ls
 - hexo clean
