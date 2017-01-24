@@ -1,0 +1,609 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/tech/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/tech/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/tech/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/tech/favicon.ico?v=5.1.0" />
+
+
+
+
+
+
+<meta name="description" content="ios开发之奇巧淫技1.The file “GCZP” couldn’t be opened because you don’t have permission to    解决办法1：将info.plist的文件中的Executable.file中的文件修改为:$(PRODUCT_NAME)    解决办法2：删除info.plist文件，重新添加。该方法注意事项（1）不能删除引用。（2）添加时">
+<meta property="og:type" content="website">
+<meta property="og:title" content="欧一移动团队">
+<meta property="og:url" content="https://ouyiteam.github.io/ios/ios开发之奇巧淫技.html">
+<meta property="og:site_name" content="欧一移动团队">
+<meta property="og:description" content="ios开发之奇巧淫技1.The file “GCZP” couldn’t be opened because you don’t have permission to    解决办法1：将info.plist的文件中的Executable.file中的文件修改为:$(PRODUCT_NAME)    解决办法2：删除info.plist文件，重新添加。该方法注意事项（1）不能删除引用。（2）添加时">
+<meta property="og:updated_time" content="2017-01-24T01:31:24.598Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="欧一移动团队">
+<meta name="twitter:description" content="ios开发之奇巧淫技1.The file “GCZP” couldn’t be opened because you don’t have permission to    解决办法1：将info.plist的文件中的Executable.file中的文件修改为:$(PRODUCT_NAME)    解决办法2：删除info.plist文件，重新添加。该方法注意事项（1）不能删除引用。（2）添加时">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/tech/',
+    scheme: 'Pisces',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="https://ouyiteam.github.io/ios/ios开发之奇巧淫技.html"/>
+
+
+
+
+
+  <title>
+  
+
+  
+     | 欧一移动团队
+  
+</title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left  ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/tech/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">欧一移动团队</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle"></p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/tech/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/tech/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tech/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup">
+ <span class="search-icon fa fa-search"></span>
+ <input type="text" id="local-search-input">
+ <div id="local-search-result"></div>
+ <span class="popup-btn-close">close</span>
+</div>
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+  <header class="post-header">
+
+	<h2 class="post-title" itemprop="name headline"></h2>
+
+
+
+</header>
+
+    
+    
+      <h1 id="ios开发之奇巧淫技"><a href="#ios开发之奇巧淫技" class="headerlink" title="ios开发之奇巧淫技"></a>ios开发之奇巧淫技</h1><p>1.The file “GCZP” couldn’t be opened because you don’t have permission to<br>    解决办法1：将info.plist的文件中的Executable.file中的文件修改为:$(PRODUCT_NAME)<br>    解决办法2：删除info.plist文件，重新添加。该方法注意事项（1）不能删除引用。（2）添加时注               意该文件的原始路径<br>2.状态栏背景颜色问题<br>    解决办法1：用系统的方法修改。<br>    解决办法2：写一个高为20的view。<br>    解决办法3：将背景y坐标向上调20。<br>3.导航条上重新定义titleView导致左右两边不对称或者左右两边问题<br>    解决办法1：重新定义左右两边按钮改变其大小。<br>    解决办法2：隐藏本身导航条，重新定义导航条。<br>4.验证某一个地址是否支持ATS，命令行代码 /usr/bin/nscurl –ats-diagnostics –verbose URL 该命令行需要满足OS X v10.11 会显示出每个请求与相应的配置当输出pass则为通过<br>5.与服务器对接时后台无法获取到参数<br>    解决办法1：如果请求没有进行序列化，请进行序列化。<br>    解决办法2：如果请求有进行序列化，请注释掉序列化。<br>6.formData表单提交时后台无法区分文件<br>    解决办法1：请先使用 formData appendPartWithFileData: name:<br>    解决办法2：如果方法1不通，请使用[formData appendPartWithFileData: name: fileName: mimeType:]; 该方法是告诉后台改文件的类型，如果没有传入文件的类型，那么后台将无法识别。<br>7.当某一个返回值是由block异步回调得到返回值不能直接赋值<br>    解决办法1：设置代理协议，进行代理回调方法赋值<br>    解决办法2：同意使用block回调，返回值<br>    解决办法3：定义block回调方法，在block回调的地方赋值该方法<br>8.使用时间的时候会出现8小时的误差。造成该问题的原因是我们获取的是0时区，而我们所在中国是东8区，所以会出现8小时的误差。<br>    解决办法1：将获取到的当前时间进行字符串化之后会得到东8区的时间。与外部交互使用该字符串时间(显示，与后台交互等)<br>    注意事项：解决办法1已经说明，但是在内部时需要使用0时区时间，这样就不会出现8小时误差。<br>8.UITableViewCell高度自适应<br>    注意事项：1.在代码里添加 _tableView.estimatedRowHeight = 44;<br>    _tableView.rowHeight = UITableViewAutomaticDimension;<br>        2.同时在约束里，要添加成为由内部向外部施加压力迫使contentView撑开。<br>        3.不能使用代理方法heightForRow返回行高，这样约束必然失效。<br>9.UITableViewCell宽度问题<br>    注意事项：先要有启动页面，这时返回宽度为320，并且布局都是按照320来，进行计算的。<br>    解决办法1：如果使用约束，请查看约束，因为约束可以做到，高度宽度自适应。<br>    解决办法2：如果使用代码布局，那么要在cell里面重写layoutSubviews方法，在里面进行        布局，即可解决问题<br>10.在获取view的frame时总是(0,0,1000,1000)，这是因为在iOS 10以后获取view的frame已经变化，此时布局尚未完成，所以获取不到正确的frame。viewController需要在方法viewDidLayoutSubviews里获取view的frame，或者这是view的frame。view需要在方法layoutSubviews里获取view的frame,或者设置frame。<br>11.在设置圆角的同时设置阴影<br>    因为设置圆角需要裁剪超出显示的图层，所以此时阴影是显示不出来的<br>    解决办法1：设置圆角记为view1，设置阴影记为view2，将view1添加到view2上，这样作为父视图，阴影将不会被裁剪掉。<br>12.当一个视图(view)在气父视图(superView)size外时，这里还需要实现点击事件，点击视图(view)是不会有响应方法的实现。<br>    解决办法1：这里需要重写父视图(superView)的- (UIView <em>)hitTest:                (CGPoint)point withEvent:(UIEvent </em>)event ，在该方法里判断点击的点是否在视    图(view)里，如果是则返回视图(view)，如果不是根据项目需求返回。<br>13.UITest获取不到UITextField等控件，在模拟器上运行录制的时候最容易退出。原因暂时没有找到，不过解决方法是有的。<br>    解决方法1：将UITest的BunledID改成和工程一样的，然后用真机进行录制，这样就可以成功获取到该控件。</p>
+
+    
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview sidebar-panel sidebar-panel-active">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/tech/images/avatar.gif"
+               alt="张东领" />
+          <p class="site-author-name" itemprop="name">张东领</p>
+          <p class="site-description motion-element" itemprop="description"></p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/tech/archives">
+              <span class="site-state-item-count">2</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          
+
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">张东领</span>
+</div>
+
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Pisces
+  </a>
+</div>
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/tech/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/tech/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/tech/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/tech/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/tech/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/tech/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/tech/js/src/utils.js?v=5.1.0"></script>
+
+  <script type="text/javascript" src="/tech/js/src/motion.js?v=5.1.0"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/tech/js/src/affix.js?v=5.1.0"></script>
+
+  <script type="text/javascript" src="/tech/js/src/schemes/pisces.js?v=5.1.0"></script>
+
+
+
+  
+
+  
+
+
+  <script type="text/javascript" src="/tech/js/src/bootstrap.js?v=5.1.0"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+
+	
+
+
+
+
+  
+  
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length == 0) {
+      search_path = "search.xml";
+    }
+    var path = "/tech/" + search_path;
+    // monitor main search box;
+
+    function proceedsearch() {
+      $("body").append('<div class="popoverlay">').css('overflow', 'hidden');
+      $('.popup').toggle();
+    }
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+      $.ajax({
+        url: path,
+        dataType: "xml",
+        async: true,
+        success: function( xmlResponse ) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = $( "entry", xmlResponse ).map(function() {
+            return {
+              title: $( "title", this ).text(),
+              content: $("content",this).text(),
+              url: $( "url" , this).text()
+            };
+          }).get();
+          var $input = document.getElementById(search_id);
+          var $resultContent = document.getElementById(content_id);
+          $input.addEventListener('input', function(){
+            var matchcounts = 0;
+            var str='<ul class=\"search-result-list\">';
+            var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+            $resultContent.innerHTML = "";
+            if (this.value.trim().length > 1) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var content_index = [];
+                var data_title = data.title.trim().toLowerCase();
+                var data_content = data.content.trim().replace(/<[^>]+>/g,"").toLowerCase();
+                var data_url = decodeURIComponent(data.url);
+                var index_title = -1;
+                var index_content = -1;
+                var first_occur = -1;
+                // only match artiles with not empty titles and contents
+                if(data_title != '') {
+                  keywords.forEach(function(keyword, i) {
+                    index_title = data_title.indexOf(keyword);
+                    index_content = data_content.indexOf(keyword);
+                    if( index_title >= 0 || index_content >= 0 ){
+                      isMatch = true;
+                      if (i == 0) {
+                        first_occur = index_content;
+                      }
+                    }
+
+                  });
+                }
+                // show search results
+                if (isMatch) {
+                  matchcounts += 1;
+                  str += "<li><a href='"+ data_url +"' class='search-result-title'>"+ data_title +"</a>";
+                  var content = data.content.trim().replace(/<[^>]+>/g,"");
+                  if (first_occur >= 0) {
+                    // cut out 100 characters
+                    var start = first_occur - 20;
+                    var end = first_occur + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if(start == 0){
+                      end = 50;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    var match_content = content.substring(start, end);
+                    // highlight all keywords
+                    keywords.forEach(function(keyword){
+                      var regS = new RegExp(keyword, "gi");
+                      match_content = match_content.replace(regS, "<b class=\"search-keyword\">"+keyword+"</b>");
+                    });
+
+                    str += "<p class=\"search-result\">" + match_content +"...</p>"
+                  }
+                  str += "</li>";
+                }
+              })};
+            str += "</ul>";
+            if (matchcounts == 0) { str = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>' }
+            if (keywords == "") { str = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>' }
+            $resultContent.innerHTML = str;
+          });
+          proceedsearch();
+        }
+      });}
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched == false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(function(e){
+      $('.popup').hide();
+      $(".popoverlay").remove();
+      $('body').css('overflow', '');
+    });
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+  </script>
+
+
+  
+
+  
+
+  
+
+  
+
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  
+  
+    
+    <entry>
+      <title><![CDATA[ios开发之奇巧淫技]]></title>
+      <url>https://ouyiteam.github.io/tech/2017/01/23/ios%E5%BC%80%E5%8F%91%E4%B9%8B%E5%A5%87%E5%B7%A7%E6%B7%AB%E6%8A%80/</url>
+      <content type="html"><![CDATA[<blockquote>
+<p>作者：赵文龙</p>
+</blockquote>
+<p>1.The file “GCZP” couldn’t be opened because you don’t have permission to<br>    解决办法1：将info.plist的文件中的Executable.file中的文件修改为:$(PRODUCT_NAME)<br>    解决办法2：删除info.plist文件，重新添加。该方法注意事项（1）不能删除引用。（2）添加时注               意该文件的原始路径<br>2.状态栏背景颜色问题<br>    解决办法1：用系统的方法修改。<br>    解决办法2：写一个高为20的view。<br>    解决办法3：将背景y坐标向上调20。<br>3.导航条上重新定义titleView导致左右两边不对称或者左右两边问题<br>    解决办法1：重新定义左右两边按钮改变其大小。<br>    解决办法2：隐藏本身导航条，重新定义导航条。<br>4.验证某一个地址是否支持ATS，命令行代码 /usr/bin/nscurl –ats-diagnostics –verbose URL 该命令行需要满足OS X v10.11 会显示出每个请求与相应的配置当输出pass则为通过<br>5.与服务器对接时后台无法获取到参数<br>    解决办法1：如果请求没有进行序列化，请进行序列化。<br>    解决办法2：如果请求有进行序列化，请注释掉序列化。<br>6.formData表单提交时后台无法区分文件<br>    解决办法1：请先使用 formData appendPartWithFileData: name:<br>    解决办法2：如果方法1不通，请使用[formData appendPartWithFileData: name: fileName: mimeType:]; 该方法是告诉后台改文件的类型，如果没有传入文件的类型，那么后台将无法识别。<br>7.当某一个返回值是由block异步回调得到返回值不能直接赋值<br>    解决办法1：设置代理协议，进行代理回调方法赋值<br>    解决办法2：同意使用block回调，返回值<br>    解决办法3：定义block回调方法，在block回调的地方赋值该方法<br>8.使用时间的时候会出现8小时的误差。造成该问题的原因是我们获取的是0时区，而我们所在中国是东8区，所以会出现8小时的误差。<br>    解决办法1：将获取到的当前时间进行字符串化之后会得到东8区的时间。与外部交互使用该字符串时间(显示，与后台交互等)<br>    注意事项：解决办法1已经说明，但是在内部时需要使用0时区时间，这样就不会出现8小时误差。<br>8.UITableViewCell高度自适应<br>    注意事项：1.在代码里添加 _tableView.estimatedRowHeight = 44;<br>    _tableView.rowHeight = UITableViewAutomaticDimension;<br>        2.同时在约束里，要添加成为由内部向外部施加压力迫使contentView撑开。<br>        3.不能使用代理方法heightForRow返回行高，这样约束必然失效。<br>9.UITableViewCell宽度问题<br>    注意事项：先要有启动页面，这时返回宽度为320，并且布局都是按照320来，进行计算的。<br>    解决办法1：如果使用约束，请查看约束，因为约束可以做到，高度宽度自适应。<br>    解决办法2：如果使用代码布局，那么要在cell里面重写layoutSubviews方法，在里面进行        布局，即可解决问题<br>10.在获取view的frame时总是(0,0,1000,1000)，这是因为在iOS 10以后获取view的frame已经变化，此时布局尚未完成，所以获取不到正确的frame。viewController需要在方法viewDidLayoutSubviews里获取view的frame，或者这是view的frame。view需要在方法layoutSubviews里获取view的frame,或者设置frame。<br>11.在设置圆角的同时设置阴影<br>    因为设置圆角需要裁剪超出显示的图层，所以此时阴影是显示不出来的<br>    解决办法1：设置圆角记为view1，设置阴影记为view2，将view1添加到view2上，这样作为父视图，阴影将不会被裁剪掉。<br>    12.当一个视图(view)在气父视图(superView)size外时，这里还需要实现点击事件，点击视图(view)是不会有响应方法的实现。<br>        解决办法1：这里需要重写父视图(superView)的- (UIView <em>)hitTest:                (CGPoint)point withEvent:(UIEvent </em>)event ，在该方法里判断点击的点是否在视    图(view)里，如果是则返回视图(view)，如果不是根据项目需求返回。<br>    13.UITest获取不到UITextField等控件，在模拟器上运行录制的时候最容易退出。原因暂时没有找到，不过解决方法是有的。<br>        解决方法1：将UITest的BunledID改成和工程一样的，然后用真机进行录制，这样就可以成功获取到该控件。</p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[使用帮助]]></title>
+      <url>https://ouyiteam.github.io/tech/2016/01/20/hello-world/</url>
+      <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+]]></content>
+    </entry>
+    
+  
+  
+</search>
